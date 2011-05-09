@@ -13,44 +13,63 @@
  * thus you see the effect of your alterations. Note that this "auto-reloading"
  * only works when editing the stylesheet in Kod.
  */
+
+/* Colors used by solarised */
+@base03:    #002b36;
+@base02:    #073642;
+@base01:    #586e75;
+@base00:    #657b83;
+@base0:     #839496;
+@base1:     #93a1a1;
+@base2:     #eee8d5;
+@base3:     #fdf6e3;
+@yellow:    #b58900;
+@orange:    #cb4b16;
+@red:       #dc322f;
+@magenta:   #d33682;
+@violet:    #6c71c4;
+@blue:      #268bd2;
+@cyan:      #2aa198;
+@green:     #859900;
+
 body {
   font-family: "M+ 1m", monospace;
   font-size: 11px;
-  background-color:#222;
-  color: #eee;
+  background-color:@base03;
+  color: @base0;
 }
 
 /* color of the caret and selection range */
-caret { color: #ff3319; }
-selection { background-color: #2F3F52; }
-column-guide { color: #444; /*width:4px; background: #333;*/ }
+caret { color: @base03; }
+selection { background-color: @base02; }
+column-guide { color: @base1; /*width:4px; background: @base02;*/ }
 
 /* the color for context lines (when specified with line ranges) */
 metaruler {
-  color: #666;
-  background: #333;
+  color: @base1;
+  background: @base02;
   border-right: 2px solid #444;
   font-size: 11px;
 }
 
-keyword { color: #66c8ef; }
-type { color: lightsalmon; }
-usertype { color: #CAC059; }
-classname { color: #eb7962; }
-string { color:#9aca7e; background-color:#212A24; }
+keyword { color: @base1; }
+type { color: @yellow; }
+usertype { color: @blue; }
+classname { color: @orange; }
+string { color:@red; /*background-color:#212A24;*/ }
 specialchar { color: #C0D164; background-color:#2B2F26; }
-regexp { color: #FFB14B; background-color:#342C22; }
-comment { color: #666; font-style: italic; }
-number { color: #C969B6; }
+regexp { color: @green; /*background-color:#342C22;*/ }
+comment { color: @base01; font-style: italic; }
+number { color: @cyan; }
 preproc { color: #9C8B7C; }
-symbol { color: #A19DBF; }
+symbol { color: @cyan; }
 function { color: #85FFDF; background-color: #1F2B31; }
 cbracket { color: #ddd; }
 todo { color: #946B57; font-weight: bold; }
 
 /* Internet related */
 url {
-  color: #77B5FF; text-decoration: underline;
+  color: @blue; text-decoration: underline;
   cursor: pointer;
 }
 
