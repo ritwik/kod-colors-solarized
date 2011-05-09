@@ -35,7 +35,7 @@ column-guide {
 metaruler {
   color: #93a1a1;
   background: #073642;
-  border-right: 2px solid #444;
+  border-right: 2px solid #073642;
   font-size: 11px;
 }
 keyword {
@@ -48,19 +48,19 @@ usertype {
   color: #268bd2;
 }
 classname {
-  color: #cb4b16;
+  color: #b58900;
 }
 string {
-  color: #dc322f;
-  /*background-color:#212A24;*/
+  color: #cb4b16;
+  background-color: #002b36;
 }
 specialchar {
-  color: #C0D164;
-  background-color: #2B2F26;
+  color: #859900;
+  background-color: #002b36;
 }
 regexp {
   color: #859900;
-  /*background-color:#342C22;*/
+  background-color: #002b36;
 }
 comment {
   color: #586e75;
@@ -70,20 +70,20 @@ number {
   color: #2aa198;
 }
 preproc {
-  color: #9C8B7C;
+  color: #859900;
 }
 symbol {
-  color: #2aa198;
+  color: #839496;
 }
 function {
-  color: #85FFDF;
-  background-color: #1F2B31;
+  color: #6c71c4;
+  background-color: #002b36;
 }
 cbracket {
-  color: #ddd;
+  color: #839496;
 }
 todo {
-  color: #946B57;
+  color: #d33682;
   font-weight: bold;
 }
 /* Internet related */
@@ -106,33 +106,33 @@ ip, name {
 }
 /* for Prolog, Perl, lang */
 variable {
-  color: #cda869;
+  color: #2aa198;
 }
 italics {
   text-decoration: underline;
   font-style: italic;
 }
 bold {
-  color: #fff;
+  color: #93a1a1;
   font-weight: bold;
 }
 /* for LaTeX, markdown, etc */
 underline {
-  color: #3C7E5B;
+  color: #268bd2;
   text-decoration: underline;
 }
 fixed {
-  color: #bbeecc;
-  background-color: #2c2c2c;
+  color: #93a1a1;
+  background-color: #073642;
 }
 argument, optionalargument {
-  color: #9194BB;
+  color: #dc322f;
 }
 math {
-  color: orange;
+  color: #cb4b16;
 }
 bibtex {
-  color: #8D86EE;
+  color: #859900;
 }
 h1,
 h2,
@@ -140,10 +140,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: lightsalmon;
+  color: #6c71c4;
 }
 ul, ol {
-  color: yellow;
+  color: #b58900;
 }
 /* for diffs */
 oldfile {
@@ -160,28 +160,28 @@ difflines {
 }
 /* for css */
 selector {
-  color: #cda869;
+  color: #cb4b16;
 }
 property {
-  color: #c4af75;
+  color: #2aa198;
 }
 value {
-  color: #f9ed97;
+  color: #859900;
 }
 /* for Oz, Erlang, etc */
 atom {
-  color: orange;
+  color: #cb4b16;
 }
 meta {
   font-style: italic;
 }
 /* CSS v2 tests */
 value > string {
-  color: red;
+  color: #2aa198;
 }
 object.json > pair > value > string {
-  color: yellow;
+  color: #b58900;
 }
 array.json value > string {
-  color: #ffaa22;
+  color: #859900;
 }

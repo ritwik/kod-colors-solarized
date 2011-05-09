@@ -48,24 +48,24 @@ column-guide { color: @base1; /*width:4px; background: @base02;*/ }
 metaruler {
   color: @base1;
   background: @base02;
-  border-right: 2px solid #444;
+  border-right: 2px solid @base02;
   font-size: 11px;
 }
 
 keyword { color: @base1; }
 type { color: @yellow; }
 usertype { color: @blue; }
-classname { color: @orange; }
-string { color:@red; /*background-color:#212A24;*/ }
-specialchar { color: #C0D164; background-color:#2B2F26; }
-regexp { color: @green; /*background-color:#342C22;*/ }
+classname { color: @yellow; }
+string { color:@orange; background-color: @base03; }
+specialchar { color: @green; background-color: @base03; }
+regexp { color: @green; background-color: @base03; }
 comment { color: @base01; font-style: italic; }
 number { color: @cyan; }
-preproc { color: #9C8B7C; }
-symbol { color: @cyan; }
-function { color: #85FFDF; background-color: #1F2B31; }
-cbracket { color: #ddd; }
-todo { color: #946B57; font-weight: bold; }
+preproc { color: @green; }
+symbol { color: @base0; }
+function { color: @violet; background-color: @base03; }
+cbracket { color: @base0; }
+todo { color: @magenta; font-weight: bold; }
 
 /* Internet related */
 url {
@@ -79,18 +79,18 @@ time, file { color: #A78AB0; font-weight: bold; }
 ip, name { color: #8CB194; }
 
 /* for Prolog, Perl, lang */
-variable { color: #cda869; }
+variable { color: @cyan; }
 italics { text-decoration: underline; font-style: italic; }
-bold { color: #fff; font-weight: bold; }
+bold { color: @base1; font-weight: bold; }
 
 /* for LaTeX, markdown, etc */
-underline { color: #3C7E5B; text-decoration: underline; }
-fixed { color: #bbeecc; background-color: #2c2c2c; }
-argument, optionalargument { color: #9194BB; }
-math { color: orange; }
-bibtex { color: #8D86EE; }
-h1,h2,h3,h4,h5,h6 { color: lightsalmon; }
-ul, ol { color: yellow; }
+underline { color: @blue; text-decoration: underline; }
+fixed { color: @base1; background-color: @base02; }
+argument, optionalargument { color: @red; }
+math { color: @orange; }
+bibtex { color: @green; }
+h1,h2,h3,h4,h5,h6 { color: @violet; }
+ul, ol { color: @yellow; }
 
 /* for diffs */
 oldfile { color: #f7bfb6; background-color:#42201C; }
@@ -98,15 +98,15 @@ newfile { color: #cff7bf; background-color:#13340C; }
 difflines { color: white; background-color:#3D96DE; }
 
 /* for css */
-selector { color: #cda869; }
-property { color: #c4af75; }
-value { color: #f9ed97; }
+selector { color: @orange; }
+property { color: @cyan; }
+value { color: @green; }
 
 /* for Oz, Erlang, etc */
-atom { color: orange; }
+atom { color: @orange; }
 meta { font-style: italic; }
 
 /* CSS v2 tests */
-value > string { color: red; }
-object.json > pair > value > string { color: yellow; }
-array.json value > string { color: #ffaa22; }
+value > string { color: @cyan; }
+object.json > pair > value > string { color: @yellow; }
+array.json value > string { color: @green; }
