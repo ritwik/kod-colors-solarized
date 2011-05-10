@@ -1,11 +1,11 @@
 /*
- * Solarized Dark Kod Style by Ritwik Roy
- * This is the dark version of the solarized style for the Kod text editor
+ * Solarized Light Kod Style by Ritwik Roy
+ * This is the light version of the solarized style for the Kod text editor
  * It is based of the default style, with colors changed.
  * It should be saved in ~/.kod/solarizedkoddark.css
  * To use it, run the following command
  *  
- *   $ defaults write se.hunch.kod style/url ~/.kod/solarizedkoddark.css
+ *   $ defaults write se.hunch.kod style/url ~/.kod/solarizedkodlight.css
  *
  * Kod needs to be restarted after this for the change to take effect.
  * Hopefully future versions of Kod will incorporate a simpler way to add user styles
@@ -17,27 +17,27 @@
  *
  */
 body {
-  font-family: "M+ 1m", monospace;
+  font-family: "Monaco", "M+ 1m", monospace;
   font-size: 11px;
-  background-color: #002b36;
-  color: #839496;
+  background-color: #fdf6e3;
+  color: #657b83;
 }
 /* color of the caret and selection range */
 caret {
-  color: #839496;
+  color: #657b83;
 }
 selection {
-  background-color: #073642;
+  background-color: #eee8d5;
 }
 column-guide {
   color: #93a1a1;
-  /*width:4px; background: @base02;*/
+  /*width:4px; background: @base2;*/
 }
 /* the color for context lines (when specified with line ranges) */
 metaruler {
   color: #93a1a1;
-  background: #073642;
-  border-right: 2px solid #073642;
+  background: #eee8d5;
+  border-right: 2px solid #eee8d5;
   font-size: 11px;
 }
 keyword {
@@ -47,25 +47,25 @@ type {
   color: #b58900;
 }
 usertype {
-  color: #93a1a1;
+  color: #586e75;
 }
 classname {
   color: #b58900;
 }
 string {
   color: #2aa198;
-  background-color: #002b36;
+  background-color: #fdf6e3;
 }
 specialchar {
   color: #859900;
-  background-color: #002b36;
+  background-color: #fdf6e3;
 }
 regexp {
   color: #859900;
-  background-color: #002b36;
+  background-color: #fdf6e3;
 }
 comment {
-  color: #586e75;
+  color: #93a1a1;
   font-style: italic;
 }
 number {
@@ -75,14 +75,14 @@ preproc {
   color: #cb4b16;
 }
 symbol {
-  color: #839496;
+  color: #657b83;
 }
 function {
   color: #268bd2;
-  background-color: #002b36;
+  background-color: #fdf6e3;
 }
 cbracket {
-  color: #839496;
+  color: #657b83;
 }
 todo {
   color: #d33682;
@@ -96,15 +96,15 @@ url {
 }
 /* other elements for ChangeLog and Log files */
 date {
-  color: #859900;
+  color: #F09C9F;
   font-weight: bold;
 }
 time, file {
-  color: #b58900;
+  color: #A78AB0;
   font-weight: bold;
 }
 ip, name {
-  color: #cb4b16;
+  color: #8CB194;
 }
 /* for Prolog, Perl, lang */
 variable {
@@ -125,7 +125,7 @@ underline {
 }
 fixed {
   color: #93a1a1;
-  background-color: #073642;
+  background-color: #eee8d5;
 }
 argument, optionalargument {
   color: #dc322f;
@@ -149,16 +149,16 @@ ul, ol {
 }
 /* for diffs */
 oldfile {
-  color: #859900;
-  background-color: #002b36;
+  color: #f7bfb6;
+  background-color: #42201C;
 }
 newfile {
-  color: #dc322f;
-  background-color: #002b36;
+  color: #cff7bf;
+  background-color: #13340C;
 }
 difflines {
-  color: #93a1a1;
-  background-color: #002b36;
+  color: white;
+  background-color: #3D96DE;
 }
 /* for css */
 selector {

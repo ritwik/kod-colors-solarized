@@ -1,11 +1,11 @@
 /*
- * Solarized Dark Kod Style by Ritwik Roy
- * This is the dark version of the solarized style for the Kod text editor
+ * Solarized Light Kod Style by Ritwik Roy
+ * This is the light version of the solarized style for the Kod text editor
  * It is based of the default style, with colors changed.
  * It should be saved in ~/.kod/solarizedkoddark.css
  * To use it, run the following command
  *  
- *   $ defaults write se.hunch.kod style/url ~/.kod/solarizedkoddark.css
+ *   $ defaults write se.hunch.kod style/url ~/.kod/solarizedkodlight.css
  *
  * Kod needs to be restarted after this for the change to take effect.
  * Hopefully future versions of Kod will incorporate a simpler way to add user styles
@@ -35,38 +35,38 @@
 @green:     #859900;
 
 body {
-  font-family: "M+ 1m", monospace;
+  font-family: "Monaco","M+ 1m", monospace;
   font-size: 11px;
-  background-color:@base03;
-  color: @base0;
+  background-color:@base3;
+  color: @base00;
 }
 
 /* color of the caret and selection range */
-caret { color: @base0; }
-selection { background-color: @base02; }
-column-guide { color: @base1; /*width:4px; background: @base02;*/ }
+caret { color: @base00; }
+selection { background-color: @base2; }
+column-guide { color: @base1; /*width:4px; background: @base2;*/ }
 
 /* the color for context lines (when specified with line ranges) */
 metaruler {
   color: @base1;
-  background: @base02;
-  border-right: 2px solid @base02;
+  background: @base2;
+  border-right: 2px solid @base2;
   font-size: 11px;
 }
 
 keyword { color: @green; }
 type { color: @yellow; }
-usertype { color: @base1; }
+usertype { color: @base01; }
 classname { color: @yellow; }
-string { color:@cyan; background-color: @base03; }
-specialchar { color: @green; background-color: @base03; }
-regexp { color: @green; background-color: @base03; }
-comment { color: @base01; font-style: italic; }
+string { color:@cyan; background-color: @base3; }
+specialchar { color: @green; background-color: @base3; }
+regexp { color: @green; background-color: @base3; }
+comment { color: @base1; font-style: italic; }
 number { color: @cyan; }
 preproc { color: @orange; }
-symbol { color: @base0; }
-function { color: @blue; background-color: @base03; }
-cbracket { color: @base0; }
+symbol { color: @base00; }
+function { color: @blue; background-color: @base3; }
+cbracket { color: @base00; }
 todo { color: @magenta; font-weight: bold; }
 
 /* Internet related */
@@ -76,9 +76,9 @@ url {
 }
 
 /* other elements for ChangeLog and Log files */
-date { color: @green; font-weight: bold; }
-time, file { color: @yellow; font-weight: bold; }
-ip, name { color: @orange; }
+date { color: #F09C9F; font-weight: bold; }
+time, file { color: #A78AB0; font-weight: bold; }
+ip, name { color: #8CB194; }
 
 /* for Prolog, Perl, lang */
 variable { color: @cyan; }
@@ -87,7 +87,7 @@ bold { color: @base1; font-weight: bold; }
 
 /* for LaTeX, markdown, etc */
 underline { color: @blue; text-decoration: underline; }
-fixed { color: @base1; background-color: @base02; }
+fixed { color: @base1; background-color: @base2; }
 argument, optionalargument { color: @red; }
 math { color: @orange; }
 bibtex { color: @green; }
@@ -95,9 +95,9 @@ h1,h2,h3,h4,h5,h6 { color: @violet; }
 ul, ol { color: @yellow; }
 
 /* for diffs */
-oldfile { color: @green; background-color:@base03; }
-newfile { color: @red; background-color:@base03; }
-difflines { color: @base1; background-color:@base03; }
+oldfile { color: #f7bfb6; background-color:#42201C; }
+newfile { color: #cff7bf; background-color:#13340C; }
+difflines { color: white; background-color:#3D96DE; }
 
 /* for css */
 selector { color: @orange; }
