@@ -1,0 +1,34 @@
+Solarized for the Kod settings
+==============================
+
+This is a port of the Solarized theme for the Kod text editor. 
+
+For details on Solarized see: http://ethanschoonover.com/solarized
+
+Installation
+------------
+
+At the moment, Kod doesn't offer a user friendly way to install/change the style. This is likely because the editor is in its very early days. In future, this will hopefully be a much easier process.
+
+1. Check if the ~/.kod/ directory exists. If it doesn't, create it using mkdir ~/.kod
+2. Copy the styles solarizedkodlight.css and solarizedkoddark.css to ~/.kod/ using the command:
+  cp solarizedkoddark.css ~/.kod/
+  cp solarizedkodlight.css ~/.kod/
+3. When you want to switch styles, run either of these command: 
+  defaults write se.hunch.kod style/url ~/.kod/solarizedkodlight.css
+  defaults write se.hunch.kod style/url ~/.kod/solarizedkoddark.css
+4. Restart Kod or click on View->Reload Style
+
+
+About
+-----
+This style was created by Ritwik Roy, based on the color palette guidelines of the Solarized project.
+
+Relevant Links
+--------------
+Solarized project on github: https://github.com/altercation/solarized
+Kod editor: http://kodapp.com
+
+This project can be found at: https://github.com/ritwik/kod-colors-solarized
+
+Feel free to modify it as you like, or fork it if you want to me to update something.
